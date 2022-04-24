@@ -1,5 +1,20 @@
+# ToDo, transform this in markdown
+
 remember the docker file command, like COPY . /.../...
 
 
 command to build the tomcat container:.
 docker image build -t yogeshraheja/tomcatone:v2 --build-arg tomcat_version=8.5.8 .
+
+
+you can commit a image, if you change some datails and would like to save the image with command:
+When this command is used, the default acction pause the image to avoid corruption data 
+	docker contianer commit -m "messagem" <target image> <commited image>
+
+What I've been learn is:
+	Docker save is for save image
+	Docker export is for container 
+	Docker commit is not recomended, but works
+
+# Build context:
+  The idea behind build context, is just to show that the file from deamon could be a server and docker CLI could be a client. So, docker build will aways work, because a temp directory will be created to run de COPY instruction on Dockerfile
