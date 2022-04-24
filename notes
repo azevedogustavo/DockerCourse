@@ -1,1 +1,5 @@
 remember the docker file command, like COPY . /.../...
+
+
+command to build the tomcat container:.
+docker image build -t yogeshraheja/tomcatone:v2 --build-arg tomcat_version=8.5.8 .
