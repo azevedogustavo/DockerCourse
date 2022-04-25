@@ -1,0 +1,14 @@
+# Things you may didn't know about Docker
+
+## Use docker inside docker
+   Yes, it's possíble, you will just need copy or share the docker.sock inside de container image called docker
+   docker run -v /var/run/docker.sock:/var/run/docker.sock -ti docker
+
+   explain kickly what is docker.sock
+
+## When docker container dies the data istill alive
+   Yes, they are efemeral, but it their still there. You can use:
+   docker container ls
+   docker container start <ID>
+
+## 
