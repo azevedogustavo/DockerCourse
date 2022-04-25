@@ -1,0 +1,15 @@
+# how to understand mysql docker and connect it to the container
+
+ARG
+ARG
+
+RUN
+
+VOLUME
+
+COPY
+COPY
+ENTRYPOINT
+HEALTHCHECK
+EXPOSE
+CMD ["mysqld"]
